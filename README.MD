@@ -1,10 +1,10 @@
-# Cobo Vault Security Chip Firmware
+# Cobo Vault Secure Element Firmware
 
-We are open sourcing a core part of our Security(Encryption) Chip software that is embedded in the Cobo Vault.
+We are open sourcing a core part of our secure element firmware that is embedded in the Cobo Vault.
 
 ## Additional Declaration
 
-Some pieces of code have been hidden as a security measure as they pertain to the Security(Encryption) Chip hardware and communication protocol of the device. As a result, this code cannot function independently.
+Some pieces of code have been hidden as a security measure as they pertain to the secure element hardware and communication protocol of the device. As a result, this code cannot function independently.
 
 # Support for BIPs
 
@@ -19,7 +19,7 @@ Some pieces of code have been hidden as a security measure as they pertain to th
 
 # Entropy Source
 
-The entropy comes from a [True-Random-Number-Generator](https://en.wikipedia.org/w/index.php?title=True_random_number_generator&redirect=no), which has passed the [FIPS140-2](https://en.wikipedia.org/wiki/FIPS_140-2) requirements, inside the Security(Encryption) Chip.
+The entropy comes from a [True-Random-Number-Generator](https://en.wikipedia.org/w/index.php?title=True_random_number_generator&redirect=no), which has passed the [FIPS140-2](https://en.wikipedia.org/wiki/FIPS_140-2) requirements, inside the secure element.
 ```
 void stone_get_strong_random(uint8_t bufRandom[], uint16_t randomLen)
 {
